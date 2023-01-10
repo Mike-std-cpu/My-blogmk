@@ -120,3 +120,15 @@
     .section__subtitle{
         text-align: center;
     }
+
+    /*Layout*/
+    .container{
+        max-width: 578px;
+        margin-left: var(--mb--1-5);
+        margin-right: var(--mb--1-5);
+    }
+
+    .grid{
+        display: grid;
+        gap: 1.5rem;
+    }
