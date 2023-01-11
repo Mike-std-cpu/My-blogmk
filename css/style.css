@@ -47,11 +47,11 @@
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 100;
-
+}
     /* Tamaño de la funte para el largo de los dispoositovos.*/
 
-    @media screen and (min-width: 968px){
-        :root{
+@media screen and (min-width: 968px){
+        :root {
             --big-font-size: 3rem;
             --h1-font-size:  2.25rem;
             --h2-font-size: 1.5rem;
@@ -62,8 +62,8 @@
         }
     }
 
-}
-     /* base*/
+
+    /* base*/
     *{
         box-sizing: border-box;
         padding: 0;
@@ -77,10 +77,10 @@
 
     body{
         margin: 0 0 var(--header-height) 0; /*Variables before declarate*/
-         font-family: var(--body-font);
-         font-size: var(--normal-font-size);
-         background-color: var(--body-color);
-         color: var(--text-color);
+        font-family: var(--body-font);
+        font-size: var(--normal-font-size);
+        background-color: var(--body-color);
+        color: var(--text-color);
     }
 
     h1,h2,h3,h4{
@@ -131,4 +131,13 @@
     .grid{
         display: grid;
         gap: 1.5rem;
+    }
+
+    .header{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: var(--z-fixed);
+        background-color: var(--body-color);
     }
