@@ -5,7 +5,7 @@
     --header-height: 3rem;
 
     /*Colors*/
-    --hue-color: 250
+    --hue-color: 250;
 
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-seocnd: hsl(var(--hue-color), 69%, 61%);
@@ -153,7 +153,7 @@
     }
 
     .nav__logo,
-    .-nav__toggle{
+    .nav__toggle{
         color: var(--title-color);
         font-weight: var(--font-medium);
     }
@@ -162,16 +162,16 @@
         color: var(--first-color);
     }
 
-    .-nav__toggle{
-      font-size: 1.1rem;
-      cursor: pointer;  
+    .nav__toggle{
+    font-size: 1.1rem;
+    cursor: pointer;  
     }
 
-    .-nav__toggle:hover{
+    .nav__toggle:hover{
         color: var(--first-color);
     }
 
-    @media screen and (max-width: 767){
+    @media screen and (max-width: 767px){
         .nav__menu{
             position: fixed;
             bottom: 0;
