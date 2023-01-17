@@ -1,0 +1,19 @@
+{
+  "name": "my-blogmk",
+  "version": "1.0.0",
+  "description": "Personal project where explain my skills in web development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mike-std-cpu/My-blogmk.git"
+  },
+  "author": "J. Miguel Andrade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mike-std-cpu/My-blogmk/issues"
+  },
+  "homepage": "https://github.com/Mike-std-cpu/My-blogmk#readme"
+}
