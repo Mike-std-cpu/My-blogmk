@@ -23,3 +23,13 @@ if(navClose) { //If is true
         navMenu.classList.remove('show-menu')
     })
 }
+
+// Remove a Mobile Menu I stract this code in bedimcode code!!
+const navLink = document.querySelectorAll('.nav__link')//our id component
+
+function linkAction(){
+    const navMenu = document.getElementById('nav-menu')
+    // When we click on each nav__link(Other icon in this menu), we remove the show-menu class
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
