@@ -419,9 +419,18 @@
     .skills__bar,
     .skills__percentage{
         height: 5px;
-        border-radius: .30rem;
+        border-radius: .25rem;
     }
 
     .skills__bar{
+        background-color: var(--first-color-lighter); /*Background light for bar */
+    }
+
+    .skills__percentage{
+        display: block;
         background-color: var(--first-color);
+    }
+
+    .skills__html{
+        width: 80%;
     }
