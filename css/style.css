@@ -405,6 +405,11 @@
         transition: .4s;
     }
 
+     .skills__list{ /*list of skills center ajust */
+        margin-left: auto;
+        transition: 2.7;
+    }
+
     .skills__titles{
         display: flex;
         justify-content: space-between;
@@ -431,6 +436,8 @@
         background-color: var(--first-color);
     }
 
+    /* FRONT SKILLS*/
+
     .skills__html{
         width: 80%;
     }
@@ -451,6 +458,38 @@
         width: 90%;
     }
 
-    .slills__react{
+    .skills__react{
         width: 60%;
+    }
+
+    /*BACK SKILLS*/
+
+    .skills__node{
+        width: 90%;
+    }
+
+    .skills__post{
+        width: 70%;
+    }
+
+    .skills__py{
+        width: 60%;
+    }
+
+    .skills__vue{
+        width: 60%;
+    }
+
+    /*DESIGNER SECTION*/
+
+    .skills__figma{
+        width: 80%;
+    }
+
+    .skills__adobe{
+        width: 80%;
+    }
+
+    .skills__sketch{
+        width: 70%;
     }
