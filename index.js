@@ -33,3 +33,20 @@ function linkAction(){
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+
+// SKILLS SECTION ANIMATION
+
+const skillsContent = document.getElementById('skills__content'),
+        skillsHeader = document.querySelectorAll('.skills__header');
+
+
+function toggleSkills(){
+    let itemClass = this.parentNode.getElementByClassName
+
+    for(i = 0; i < skillsContent.clientHeight; i++){
+        skillsContent[i].className = 'skills__content skills__close'
+    } if(itemClass === 'skills__content skills__close'){
+        this.parentNode.className = 'skills__content skills__open'
+    }
+}
