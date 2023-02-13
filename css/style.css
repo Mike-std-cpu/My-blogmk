@@ -509,3 +509,17 @@
     .skills__open .skills__arrow{
         transform: rotate(-180deg);
     }
+
+    /* Qualification Section */
+    
+    .qualification__tabs{
+        display: contents;
+        justify-content: space-evenly;
+        margin-bottom: var(--mb-2);
+    }
+
+    .qualification__button{
+        font-size: var(--h3-font-size);
+        font-weight: var(--font-medium);
+        cursor: pointer;
+    }
