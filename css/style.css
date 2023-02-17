@@ -605,5 +605,8 @@
     .services__button{
         cursor: pointer;
         font-size: var(--small-font-size);
+    }
 
+    .services__button:hover .button__icon{
+        transform: translateX(.60rem);
     }
