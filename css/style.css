@@ -333,6 +333,21 @@
         align-items: center;
     }
 
+    .button--small{
+        padding: .75rem 1rem;
+    }
+
+    /* .button--link{
+        padding: 0;
+        background-color: transparent;
+        color: var(--first-color);
+    } */
+
+    .button--link:hover{
+        background-color: transparent;
+        color: var(--first-color-alt);
+    }
+
     /* ABOUT section */
     .about__img{
         width: 360px;
@@ -579,4 +594,16 @@
         font-size: 1.5rem;
         color: var(--first-color);
         margin-bottom: var(--mb-1);
+    }
+
+    .services__title{
+        font-size: var(--h3-font-size);
+        margin-bottom: var(--mb-1);
+        font-weight: var(--font-medium);
+    }
+
+    .services__button{
+        cursor: pointer;
+        font-size: var(--small-font-size);
+
     }
