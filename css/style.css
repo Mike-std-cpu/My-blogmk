@@ -627,8 +627,9 @@
         padding: 0 1rem;
         z-index: var(--z-modal);
         transition: .4s;
-        /* opacity: 0; */
-        /* visibility: hidden; */
+        /*In active, is the oposive to this. */
+        opacity: 0; 
+        visibility: hidden;
     }
 
     .services__modal-content{
@@ -664,4 +665,11 @@
     .services__modal-icon{
         color: var(--first-color);
         margin-right: var(--mb-0-25);
+    }
+
+    /* MODAL ACTIVE IN JS */
+
+    .active-modal{
+        opacity: 1;
+        visibility: visible;
     }
