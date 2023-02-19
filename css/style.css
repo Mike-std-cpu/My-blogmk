@@ -16,7 +16,7 @@
     --text-color-light:hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
     --body-color: hsl(var(--hue-color), 60%, 99%);
-    --container-color: FFF;
+    --container-color: #FFF;
 
     /*Fuentes y tipografia*/
     --body-font: 'Poppins', sans-serif;
@@ -638,4 +638,14 @@
 
     .services__modal-services{
         row-gap: 1rem;
+    }
+
+    .services__modal-service{
+        display: flex;
+    }
+
+    .services__modal-title{
+        font-size: var(--h3-font-size);
+        font-weight: var(--font-medium);
+        margin-bottom: var(--mb--1-5);
     }
