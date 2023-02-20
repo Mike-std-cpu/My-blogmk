@@ -35,7 +35,7 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
-// SKILLS SECTION ANIMATION
+// ? SKILLS SECTION ANIMATION
 
 const skillsContent = document.getElementsByClassName('skills__content'),
         skillsHeader = document.querySelectorAll('.skills__header'); /* Elements in all nodeList*/
@@ -53,7 +53,7 @@ function toggleSkills(){
 skillsHeader.forEach((el =>{el.addEventListener('click', toggleSkills)}))
 
 
-// SERVICES ACTION ANIMATION SECTION
+// ? SERVICES ACTION ANIMATION SECTION
 
 
 const modalViews = document.querySelectorAll('.services__modal'),
@@ -64,7 +64,7 @@ let modal = function(modalClick){
     modalViews[modalClick].classList.add('active-modal');
 }
 
-// button active
+// * button active
 
 modalBtns.forEach((modalBtn, i ) => { 
     modalBtn.addEventListener('click', () => {
@@ -74,7 +74,7 @@ modalBtns.forEach((modalBtn, i ) => {
     })
 })
 
-// button close active
+// ! button close active
 
 modalClose.forEach((modalClose) => { 
     modalClose.addEventListener('click', () => {
