@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>¡Hello world!🚀</title>
 </head>
@@ -523,11 +524,11 @@
             <h2 class="section__title"> 🚀 My portafolio</h2>
             <span class="section__subtitle">Most recent work & my practical projects!!</span>
 
-            <div class="portafolio__container container">
+            <div class="portafolio__container container swiper-container">
 
-                <div>
+                <div class="swiper-wrapper">
                     <!-- PROJECT 1 -->
-                    <div class="portafolio__content grid">
+                    <div class="portafolio__content grid swiper-slide">
                         <img src="./img/goo.png" alt="" class="portafolio__img">
 
                         <div class="portafolio__data">
@@ -541,7 +542,7 @@
                     </div>
 
                     <!-- PROJECT 2 -->
-                    <div class="portafolio__content grid">
+                    <div class="portafolio__content grid swiper-slide">
                         <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" class="portafolio__img">
 
                         <div class="portafolio__data">
@@ -553,8 +554,9 @@
                             </a>
                         </div>
                     </div>
+
                     <!-- PROJECT 3 -->
-                    <div class="portafolio__content grid">
+                    <div class="portafolio__content grid swiper-slide">
                         <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" class="portafolio__img">
 
                         <div class="portafolio__data">
@@ -568,6 +570,13 @@
                     </div>
                 </div>
 
+                <!-- Arrows in wriper -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+
             </div>
         </section>
 
@@ -576,4 +585,5 @@
     
 </body>
 <script src="./index.js"></script>
+<script src="./css/swiper-bundle.min.js"></script>
 </html>
