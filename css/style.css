@@ -673,3 +673,24 @@
         opacity: 1;
         visibility: visible;
     }
+
+    /* portafiolio section */
+
+    .portafolio__container{
+        overflow: initial;
+    }
+
+    .portafolio__content{
+        padding: 0 1.5rem;
+    }
+
+    .portafolio__img{
+        width: 265px;
+        border-radius: .7rem;
+        justify-self: center;
+    }
+
+    .portafolio__title{
+        font-size: var(--h3-font-size);
+        margin-bottom: var(--mb-0-5);
+    }
