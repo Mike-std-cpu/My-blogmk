@@ -694,3 +694,11 @@
         font-size: var(--h3-font-size);
         margin-bottom: var(--mb-0-5);
     }
+
+    .portafolio__description{
+        margin-bottom: var(--mb-0-75);
+    }
+
+    .portafolio__button:hover .button__icon{
+        transform: translateX(.25rem)
+    }
