@@ -1,4 +1,4 @@
-const { default: Swiper } = require("swiper");
+// import { default as Swiper } from "swiper";
 
 /*Show menu and hidden */
 const navMenu = document.getElementById('nav-menu'),
@@ -86,16 +86,16 @@ modalClose.forEach((modalClose) => {
 })
 
 // Swiper initial
-
-let swiper = new Swiper('.portafolio__container',{
+let swiper = new Swiper('.portfolio__container',{
     cssMode: true,
+    loop: true, 
+
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
     pagination: {
-        el: '.swiper-pagination'
+        el: '.swiper-pagination',
+        clickable: true,
     },
-    mousewheel: true,
-    keyboard: true,
 });

@@ -676,29 +676,29 @@
 
     /* portafiolio section */
 
-    .portafolio__container{
+    .portfolio__container{
         overflow: initial;
     }
 
-    .portafolio__content{
+    .portfolio__content{
         padding: 0 1.5rem;
     }
 
-    .portafolio__img{
+    .portfolio__img{
         width: 265px;
-        border-radius: .7rem;
+        border-radius: .5rem;
         justify-self: center;
     }
 
-    .portafolio__title{
+    .portfolio__title{
         font-size: var(--h3-font-size);
         margin-bottom: var(--mb-0-5);
     }
 
-    .portafolio__description{
+    .portfolio__description{
         margin-bottom: var(--mb-0-75);
     }
 
-    .portafolio__button:hover .button__icon{
-        transform: translateX(.25rem)
+    .portfolio__button:hover .button__icon{
+        transform: translateX(.25rem);
     }
