@@ -62,12 +62,41 @@
         }
     }
 
+    /* Button Dark/Light */
+
+    .nav__btns{
+        display: flex;
+        align-items: center;
+    }
+
+    .change-theme{
+        font-size: 1.25rem;
+        color: var(--title-color);
+        margin-right: var(--mb-1);
+        cursor: pointer;
+    }
+
+        /* DARK MODE SECTION */
+    body.dark-theme{
+        --first-color-seocnd: hsl(var(--hue-color), 30%, 8%);
+        --title-color:hsl(var(--hue-color), 8%, 95%);
+        --text-color:hsl(var(--hue-color), 8%, 75%);
+        --input-color: hsl(var(--hue-color), 29%, 16%);
+        --body-color: hsl(var(--hue-color), 28%, 16%);
+        --container-color: hsl(var(--hue-color), 29%, 16%);
+    }
+
+
 
     /* base*/
     *{
         box-sizing: border-box;
         padding: 0;
         margin: 0;
+    }
+
+    .change-theme:hover{
+        color: var(--first-color);
     }
 
     html{
