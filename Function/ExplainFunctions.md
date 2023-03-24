@@ -48,5 +48,47 @@ let modal = function(modalClick){
 En el caso de este pequeño bloque de código, al momeno de activar el boton, se añadiran la clase `active-modal` para que se muestre _(En css se declaran los estilos para que se muestre en pantalla)_ cuando se cierre, se ejecutara el close para que quite la clase `aactive-modal`.
 
 ---
+## Darkmode section.
+
+```javascript
+const themeButton = document.getElementById('theme-button')
+const darkTheme = 'dark-theme'
+const iconTheme = 'uil-sun'
+
+// Previously selected topic (if user selected)
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
+
+// We obtain the current theme that the interface has by validating the dark-theme class
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
+```
+
+- `localStorage.getitem(keyName)`: El método getItem() de Storage, devuelve el valor del elemento del objeto de almacenamiento especificado. En el caso del ejemplo del proyecto almacenara el _valor_ del elemento dentro de la viables `selectedTheme` o `selectedIcon`.
+
+```js
+if (selectedTheme) {
+  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+  themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+}
+
+// Activate / deactivate the theme manually with the button
+themeButton.addEventListener('click', () => {
+
+    // Add or remove the dark / icon theme
+    document.body.classList.toggle(darkTheme)
+    themeButton.classList.toggle(iconTheme)
+    
+    // We save the theme and the current icon that the user chose
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
+})
+```
+
+- Dentro de las condicionales en los **Operadores ternarios** se esta evaluando con  el metodo `contains` si el contenido con la clase seleccionada es _dark_ o _ligh_ para poder hacer el cambio. Lo mismo pasa con el icono.
+- Dependiendo del resultado que sea retornado, con el `remove` y `add` se iran quitando o agregando en la clases dark o light segun sea el caso.
+
+---
 
 <p align="right"> Thanks for watching! <img align="right" alt="xd" width="35" height="35" src="https://i.gifer.com/origin/08/089af74235a38edcc7b433321f0a5472_w200.webp" /></p>
